@@ -1,0 +1,35 @@
+div {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    border: 1px solid crimson;
+    animation-name: heart;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /*animation-direction: reverse;
+    animation-timing-function: ease-in; */
+    /*animation-fill-mode: forwards; */
+    animation: heart 5s ease-in infinite;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+@keyframes heart {
+    0% {
+        background-color: darkcyan;
+        transform: rotateZ(0deg);
+        transform: translateX(50%);
+    }
+    /*25% {
+        background-color: rgba(33, 219, 73, 0.459);
+    }
+    75% {
+        background-color: rgba(236, 13, 188, 0.945);
+    } */
+    100% {
+        background-color: rgb(247, 243, 40);
+        transform: rotateZ(180deg);
+        transform: translateX(-50%);
+    }
+}
